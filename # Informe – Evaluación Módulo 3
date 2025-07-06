@@ -1,0 +1,43 @@
+# Informe – Evaluación Módulo 3
+
+---
+
+## ¿Qué hace tu página?
+
+Esta página web sencilla permite al usuario ingresar su nombre en un campo de texto y, al hacer clic en un botón, genera un saludo personalizado con ese nombre. Además, muestra la cantidad de caracteres que tiene el nombre ingresado o un mensaje indicando si el campo está vacío.
+
+## ¿Qué aprendí al hacerla?
+
+Al desarrollar esta página, reforcé el entendimiento de:
+
+* La **interacción entre HTML, CSS y JavaScript** para crear una experiencia de usuario dinámica.
+* La importancia de estructurar correctamente el HTML y vincular archivos CSS y JS externos.
+* Cómo **capturar elementos del DOM** (Document Object Model) usando `getElementById`.
+* El manejo de **eventos** con `addEventListener` para responder a las interacciones del usuario (clic en un botón, presionar 'Enter').
+* El uso de **variables** (`const`) para almacenar referencias a elementos y valores.
+* La aplicación de **estructuras condicionales (`if/else`)** para manejar diferentes escenarios (nombre vacío vs. nombre ingresado).
+* La creación y llamada de **funciones** para encapsular la lógica del comportamiento de la página, promoviendo un código más limpio y reutilizable.
+* Conceptos básicos de manipulación del DOM, como cambiar el `textContent` de un párrafo.
+
+## ¿Qué estructuras de JavaScript usé?
+
+* **Variables:** Utilicé `const` para declarar referencias a elementos del DOM y el valor del nombre.
+* **Funciones:** Creé una función `generarSaludo()` que encapsula toda la lógica de la interacción.
+* **Estructuras condicionales:** Implementé `if` y `else` para verificar si el campo de nombre estaba vacío y ajustar el mensaje de salida en consecuencia.
+* **Captura de eventos del DOM:** Usé `addEventListener('click', generarSaludo)` en el botón y `addEventListener('keypress', ...)` en el campo de texto para detectar las acciones del usuario.
+
+## ¿Qué parte me costó más?
+
+* "Inicialmente, entender cómo seleccionar correctamente los elementos del DOM y asegurarse de que el script se ejecutara después de que el HTML estuviera completamente cargado (aunque al poner el `<script>` al final del `<body>` se soluciona, fue una consideración inicial)."
+* "Manejar el caso del campo de texto vacío y asegurarse de que los mensajes de error/información se mostraran y ocultaran correctamente."
+* "La conexión y el orden de los archivos `script.js` y `style.css` en el HTML, ya que un error en la ruta o el orden puede impedir que funcionen."
+* "Asegurarme de que el código fuera lo suficientemente **limpio y comentado**."
+
+## ¿Qué mejorarías si tuviera más tiempo?
+
+* **Validación más robusta:** Podría añadir validación para el tipo de caracteres permitidos en el nombre (ej. evitar números o símbolos).
+* **Feedback visual:** Añadir animaciones sutiles o transiciones al mostrar el saludo.
+* **Interfaz de usuario más compleja:** Podría incluir más campos, como apellido, y generar un saludo más elaborado.
+* **Manejo de errores:** Implementar un sistema más sofisticado para mostrar errores si algo sale mal (aunque en esta app simple es limitado).
+* **Persistencia de datos:** Guardar el último nombre ingresado en el almacenamiento local del navegador (`localStorage`) para que se recuerde en futuras visitas.
+* **UX/UI:** Mejorar los colores de los textos y el boton 
